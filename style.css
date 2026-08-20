@@ -1,5 +1,4 @@
 :root {
-  /* Premium Psychological Colors */
   --accent-gradient: linear-gradient(135deg, #FF0076, #590FB7); 
   --bg-color: #FAFAFC; 
   --surface: #FFFFFF;
@@ -24,7 +23,6 @@ body {
   -webkit-font-smoothing: antialiased; 
 }
 
-/* Addictive Sticky Header with Frosted Glass */
 header {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(16px);
@@ -56,12 +54,11 @@ header p {
 header a { text-decoration: none; }
 
 .container {
-  max-width: 1100px; /* Widened significantly for a more expansive layout */
+  max-width: 1100px;
   margin: 40px auto;
   padding: 0 30px;
 }
 
-/* App-like Card UI */
 .article-card {
   background: var(--surface);
   padding: 28px;
@@ -83,7 +80,6 @@ header a { text-decoration: none; }
   display: block;
 }
 
-/* Social Proof & FOMO triggers */
 .meta-data {
   display: flex;
   align-items: center;
@@ -116,104 +112,4 @@ header a { text-decoration: none; }
   margin-top: 12px;
   font-size: 16px;
   line-height: 1.5;
-}
-
-/* Article Internal Styles */
-.article-content h1 {
-  font-size: 36px;
-  font-weight: 800;
-  letter-spacing: -1px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.author-bar {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  margin-bottom: 30px;
-}
-
-.author-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--accent-gradient);
-}
-
-.author-info {
-  font-size: 14px;
-  color: var(--text-muted);
-  font-weight: 500;
-}
-
-.author-info strong {
-  color: var(--text-main);
-  display: block;
-}
-
-.article-content h2 {
-  margin-top: 40px;
-  margin-bottom: 16px;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
-
-.article-content p, .article-content li {
-  font-size: 18px;
-  color: #333333;
-  margin-bottom: 16px;
-  line-height: 1.7;
-}
-
-/* NEW: Image Right Layout (Flexbox) */
-.section-flex {
-  display: flex;
-  align-items: flex-start;
-  gap: 50px; /* Increased gap to match wider screen */
-  margin-bottom: 40px;
-}
-
-.section-text {
-  flex: 1; /* Takes up remaining space */
-}
-
-.section-image {
-  width: 440px; /* Made the images larger to fit the wider screen */
-  border-radius: 16px;
-  box-shadow: var(--shadow-rest);
-  object-fit: cover;
-  aspect-ratio: 4/3;
-  transition: transform 0.3s ease;
-}
-
-.section-image:hover {
-  transform: scale(1.02);
-}
-
-/* Mobile Responsiveness for Images */
-@media (max-width: 768px) {
-  .section-flex {
-    flex-direction: column-reverse; /* Text stacks below image on mobile */
-  }
-  .section-image {
-    width: 100%;
-    aspect-ratio: 16/9;
-  }
-}
-
-.ad-placeholder {
-  background-color: var(--bg-color);
-  border-radius: 12px;
-  text-align: center;
-  padding: 30px;
-  margin: 40px 0;
-  color: var(--text-muted);
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
 }
